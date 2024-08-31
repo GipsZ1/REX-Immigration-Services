@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    list-style: none;
+    font-size: 1rem;
+}
+body{
+background: #edf2fb;
+}
+header{
+    background:#03045e  ;
+    position: relative;
+}
+.nav__element{
+    position: absolute;
+}
+.nav__icons{
+    position: absolute;
+    top: 2.7em;
+    right: 0;
+    padding-right: 1em;
+}
+.nav__icons svg{
+    fill: #fff;
+}
+.logo{ 
+    width: 30%;
+    height: 15vh;
+}
+.logo img{
+    width: 100%;
+   
+}
+.nav__element{
+    width: 100%;
+    display: inline-block;
+    background: #03045e;
+    text-align: center;
+    box-shadow: 2px 2px 2px;
+    
+    animation: dropdown .4s ease-in;
+}
+@keyframes dropdown {
+    0% {
+        max-height: 0;
+        opacity: 0;
+    }
+    100% {
+        max-height:300px; 
+        opacity: 1;
+    }
+}
+.nav__element ul li{
+    color: #fff;
+    padding: 1em ;
+    margin-bottom: .5em;
+}
+.nav__element ul li:hover{
+    background:#023e8a ;
+    font-weight: 500;
+    transform: translateY(-.5em);
+}
+.Hero{
+    background-image: url(image/Hero.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Hero h2{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.content{
+    padding: 5em 1em;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.593);
+    height: 80vh;
+}
+.content li{
+    margin-top: 1em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+.service{
+    width: 95%;
+    margin: 2em auto;
+}
+.service h3{
+    color: #023e8a;
+    margin: 1em auto;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 50%;
+    border-bottom: 3px solid #023e8a;
+}
+.service__img{
+    width: 100%;
+   
+}
+.service__img img{
+    width: 100%;
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow: 1px 1px 2px;
+}
+.service_con p{
+    width: 90%;
+    margin: 1em auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-wrap: balance;
+    text-align: center;
+}
+.more{
+    text-align: center;
+}
+.more p{
+    font-size: .6rem;
+    font-weight: 500;
+}
+.canada{
+    background: #ffffff;
+    width: 100%;
+    padding: 2em .5em;
+}
+.canada h3{
+    color: #023e8a;
+    margin: 1em auto;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 94%;
+    border-bottom: 3px solid #023e8a;
+}
+.canada h6{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1em;
+    font-size: .8rem;
+}
+.canada_conatin p{
+    width: 95%;
+    margin: 1em auto;
+    font-size: .9rem;
+    line-height: 1.5;
+    text-wrap: balance;
+}
+.card{
+    width: 85%;
+    margin: 1em auto;
+    box-shadow: 1px 1px 10px #e5edfb;
+    padding: .5em;
+    border-radius: 1em;
+}
+.card img{
+    width: 100%;
+    border-radius: 1em;
+}
+.card h4{
+    text-transform: uppercase;
+    margin: .5em auto;
+    font-size: 1.15rem;
+    text-align: center;
+}
+.card p{
+    text-align: center;
+    font-size: .9rem;
+    width: 90%;
+    line-height: 1.5;
+    margin: .5em auto;
+}
+.about{
+    width: 95%;
+    margin: 2em auto;
+}
+.about h3{
+    color: #023e8a;
+    margin: 1em auto;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 60%;
+    border-bottom: 3px solid #023e8a;
+}
+.about_img{
+    width: 100%;
+   
+}
+.about_img img{
+    width: 100%;
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow: 1px 1px 2px;
+}
+.about_con p{
+    width: 90%;
+    margin: 1em auto;
+    font-size: .9rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.contact{
+    background: #ffffff;
+    width: 100%;
+    padding: 2em .5em; 
+}
+.contact h3{
+    color: #023e8a;
+    margin: 1em auto;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 50%;
+    border-bottom: 3px solid #023e8a;
+}
+.contact_about p{
+    width: 90%;
+    margin: 1em auto;
+    font-size: .9rem;
+    line-height: 1.6;
+    text-align: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    background:#03045e  ;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 1px 1px 10px rgb(174, 174, 174); 
+}
+form input{
+    padding: .7em 2em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    margin: .5em auto;
+    width: 95%;
+}
+form input::placeholder{
+    font-size: .7rem;
+}
+label{
+    margin-left: 1em;
+    font-weight: 600;
+}
+textarea{
+    padding: 1em;
+    margin: .5em auto;
+    width: 95%;
+    border-radius: .5em;
+    border: none;
+    outline: none;
+}
+textarea::placeholder{
+    font-size: .7rem;
+}
+button{
+width: 50%;
+padding: 1em 1.2em;
+border-radius: .5em;
+border: none;
+color: #fff;
+font-weight: 500;
+ background: #c1121f;
+ margin: 1em auto;
+ outline: none;
+}
+footer{
+    background:#03045e  ;
+    color: #fff;
+}
+.foot_log{
+    width: 40%;
+    margin: 0 auto;
+}
+.foot_log img{
+    width: 100%;
+    height: 15vh;
+}
+.foot__icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+svg{
+    fill: #fff;
+}
+svg:hover{
+    fill: #c1121f;
+}
+.foot__contact{
+    text-align: center;
+    width: 100%;
+}
+.foot__contact h6 {
+    padding: 1em;
+}
+.foot__contact p{
+    padding: 1em;
+}
+@media (min-width:600px) {
+    body{
+        display: none;
+    }
+    
+}
