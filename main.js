@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded',()=>{
+
     let open1=document.getElementById('open')
-    let menu=document.querySelector('.nav__element')
+    let menu=document.querySelector('#main')
     menu.style.display="none"
+    
     open1.addEventListener('click',()=>{
         if(menu.style.display==="none"){
             menu.style.display='inline-block'
@@ -10,4 +11,3 @@ document.addEventListener('DOMContentLoaded',()=>{
                menu.style.display='none'
         }
     })
-})

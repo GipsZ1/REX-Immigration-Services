@@ -2,17 +2,24 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
     list-style: none;
     font-size: 1rem;
+}
+li a{
+    color: #fff;
+}
+.nav__element1{
+    display: none;
 }
 body{
 background: #edf2fb;
 }
 header{
     background:#03045e  ;
-    position: relative;
 }
 .nav__element{
     position: absolute;
@@ -32,15 +39,15 @@ header{
 }
 .logo img{
     width: 100%;
-   
 }
+
 .nav__element{
+    display: flex;
     width: 100%;
     display: inline-block;
     background: #03045e;
     text-align: center;
     box-shadow: 2px 2px 2px;
-    
     animation: dropdown .4s ease-in;
 }
 @keyframes dropdown {
@@ -65,7 +72,7 @@ header{
 }
 .Hero{
     background-image: url(image/Hero.jpg);
-    height: 80vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,10 +88,10 @@ header{
     text-transform: uppercase;
 }
 .content{
-    padding: 5em 1em;
+    padding: 10em 1em;
     z-index: 999;
     background: rgba(0, 0, 0, 0.593);
-    height: 80vh;
+    height: 100vh;
 }
 .content li{
     margin-top: 1em;
@@ -304,14 +311,252 @@ svg:hover{
     width: 100%;
 }
 .foot__contact h6 {
-    padding: 1em;
+    padding: .5em;
 }
 .foot__contact p{
-    padding: 1em;
+    padding: .5em;
 }
 @media (min-width:600px) {
-    body{
-        display: none;
+    li a{
+        color: #fff;
+        font-size: 1.5rem;
     }
-    
+  .logo{
+    position: relative;
+    width: 50%;
+  }
+  .logo img{
+    top: 0;
+    height: 15vh;
+    width: 50%;
+  }
+  .nav__element{
+    display: flex;
+    z-index: 0;
+    box-shadow: none;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .nav__element ul li{
+    display: inline-block;
+  }
+  .nav__icons{
+    display: none;
+  }
+  ul {
+    display: flex;
+  }
+  ul li{
+    font-size: 1.4rem;
+    transition: none;
+  } 
+   ul li :hover{
+    transform: none;
+   }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   .content h2{
+    font-size: 3.5rem;
+  }
+  .content p{
+    font-size: 2rem;
+  }
+  .service h3{
+    font-size: 2.5rem;
+    width: 23%;
+  }
+  .service_con{
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    margin-bottom: 2em;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .service__img{
+    width: 70%;
+  }
+  .service_con p{
+    width: 60%;
+    margin: 0;
+    padding: 1em ;
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  .more{
+    width: 100%;
+  }
+  .more p{
+   font-size: .9rem;
+  }
+  .canada_conatin h3{
+    width: 60%;
+    font-size: 2.5rem;
+    margin-bottom: .5em;
+  }
+  .canada_conatin h6{
+    font-size: 1.2rem;
+  }
+  .canada_conatin p{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .canada{
+    padding: 0;
+  }
+  .cards{
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+  .cards img{
+    height: 35vh;
+  }
+  .card h4{
+    font-size: 1.6rem;
+  }
+  .cards p{
+    font-size: 1.3rem;
+  }
+  .about h3{
+    width: 30%;
+    font-size: 2.5rem;
+  }
+  .about_con{
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    margin-bottom: 2em;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .about_img{
+    width: 70%;
+  }
+  .about p{
+    width: 70%;
+    margin: 0;
+    padding: 1em ;
+    font-size: 1.3rem;
+    text-align: start;
+  }
+  .contact_about h3{
+    width: 50%;
+    font-size: 2rem;
+  }
+  .contact_about{
+    width: 50%;
+  }
+  .contact_about p{
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+  }
+  .contact{
+    display: flex;
+    gap: 30px;
+  }
+  form{
+    margin: 0;
+    max-width: 650px;
+  }
+  form input{
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    margin: 1em auto;
+    width: 95%;
+}
+form input::placeholder{
+    font-size: 1.2rem;
+}
+label{
+    margin-left: 1em;
+    font-weight: 600;
+}
+textarea{
+    padding: 1em;
+    margin: .5em auto;
+    width: 95%;
+    border-radius: .5em;
+    border: none;
+    outline: none;
+}
+textarea::placeholder{
+    font-size: 1.2rem;
+}
+button{
+width: 40%;
+padding: 1em;
+border-radius: .5em;
+border: none;
+color: #fff;
+font-weight: 600;
+ background: #c1121f;
+ margin: 1em auto;
+ outline: none;
+}
+footer{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot_log{
+    width: 30%;
+}
+.foot_log img{
+    width: 50%;
+}
+.foot__icons{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot__contact{
+    display: flex;
+    align-items: center;
+justify-content: end;
+}
+.foot__contact h6{
+    font-size: 1.1rem;
+}
+.foot__contact p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.foot__contact span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.nav__element1{
+    text-align: end;
+    display: inline-block;
+}
+.nav__element1 ul li{
+    padding: 1em;
+    font-size: .6rem;
+}
+.content{
+    padding: 1em 1em;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.593);
+    height: 100vh;
+}
+.content h2{
+   font-size: 3rem;
+}
+
 }
